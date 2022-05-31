@@ -17,8 +17,14 @@ func _ready():
 
 
 func _on_Button_pressed():
+	
 	server._connect_to_server()
+	server.start_game()
 
 
 func _on_Button2_pressed():
-	server.load_game()
+	pass
+
+
+func _on_LineEdit_text_entered(new_text):
+	server.SelectedIP = new_text

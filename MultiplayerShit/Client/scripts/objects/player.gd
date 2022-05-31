@@ -82,6 +82,9 @@ sync func pushed(vel):
 	PushedTimer = 1
 	Velocity += vel
 
+sync func remove_player():
+	queue_free()
+
 func _on_PushZone_body_entered(body):
 	if body.is_in_group("Player"):
 		if body != self:

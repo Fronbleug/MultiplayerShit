@@ -9,5 +9,6 @@ remote func spawn_players(id):
 	player.name = str(id)
 	Players.add_child(player)
 	rpc("spawn_player",id)
-
+func remove_players(id):
+	get_node("Players/" + str(id)).rpc_id(id,"remove_player")
 	

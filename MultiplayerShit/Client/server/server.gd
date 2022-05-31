@@ -2,7 +2,7 @@ extends Node
 
 
 const DEFAULTIP = "127.0.0.1"
-const DEFAULTPORT = 6943
+const DEFAULTPORT = 4444
 
 var Network = NetworkedMultiplayerENet.new()
 var SelectedIP
